@@ -32,7 +32,7 @@ def check_directory(url):
         initial_length = len(driver.page_source)
 
         WebDriverWait(driver, 5).until(
-            lambda driver: len(driver.page_source) > initial_length
+            lambda driver: len(driver.page_source) != initial_length
         )
         
         print(f"[+] Gefunden: {url}")

@@ -16,6 +16,7 @@ This script is a **headless directory brute-forcer** that attempts to discover h
 ### **1️ Install Selenium**
 
 ```bash
+#bash
 pip install selenium
 ```
 
@@ -24,12 +25,14 @@ pip install selenium
 This script requires a WebDriver to control the browser. For Firefox, install **GeckoDriver**:
 
 ```bash
+#bash
 sudo apt install -y firefox-geckodriver
 ```
 
 Or manually:
 
 ```bash
+#bash
 wget https://github.com/mozilla/geckodriver/releases/latest/download/geckodriver-linux64.tar.gz
 sudo tar -xvzf geckodriver-linux64.tar.gz -C /usr/local/bin/
 chmod +x /usr/local/bin/geckodriver
@@ -38,6 +41,7 @@ chmod +x /usr/local/bin/geckodriver
 For **Chrome**, install **Chromedriver**:
 
 ```bash
+#bash
 sudo apt install -y chromium-chromedriver
 ```
 
@@ -46,6 +50,7 @@ Ensure the WebDriver is in your system's PATH.
 Verify the installation:
 
 ```bash
+#bash
 geckodriver --version  # For Firefox
 chromedriver --version  # For Chrome
 ```
@@ -57,12 +62,14 @@ chromedriver --version  # For Chrome
 Run the script with the following parameters:
 
 ```bash
+#bash
 python gobuster_selenium.py --url <TARGET_URL> --w <WORDLIST>
 ```
 
 ### **Example:**
 
 ```bash
+#bash
 python gobuster_selenium.py --url http://127.0.0.1:3000/ --w ~/Desktop/wordlist.txt
 ```
 
