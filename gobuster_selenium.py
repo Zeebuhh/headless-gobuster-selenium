@@ -1,6 +1,5 @@
 from selenium import webdriver 
 from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.firefox.service import Service as FirefoxService
 
 import argparse
 
@@ -21,9 +20,7 @@ driver_path = "/usr/local/bin/geckodriver"
 
 options = webdriver.FirefoxOptions()
 options.add_argument("--headless")
-
-service = FirefoxService(driver_path)
-driver = webdriver.Firefox(service=service, options=options)
+driver = webdriver.Firefox(executable_path=driver_path, options=options)
 
 # FUNCTIONS
 

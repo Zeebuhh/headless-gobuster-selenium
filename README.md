@@ -36,7 +36,7 @@ This script is a **headless directory brute-forcer** that attempts to discover h
 
 This script was developed and tested on **Kali Linux**.
 
-- **Selenium Version:** `selenium-4.28.1`
+- **Selenium Version:** `selenium-4.9.0`
 - **Geckodriver Version:** `geckodriver 0.35.0`
 
 ---
@@ -46,7 +46,7 @@ This script was developed and tested on **Kali Linux**.
 ### **Install Selenium**
 
 ```bash
-pip install selenium
+pip install selenium=4.9.0
 ```
 
 ### **Install WebDriver**
